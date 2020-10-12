@@ -38,8 +38,6 @@ class RandomQuote extends Component {
       const { quote, author } = this.state
       return (
          <div id='wrapper'>
-            <h1 className='title'>Random Quotes</h1>
-
             <div id='quote-box'>
                <div id='text'><p>{quote}</p></div>
                <div id='author'><h5>{author}</h5></div>
@@ -48,7 +46,7 @@ class RandomQuote extends Component {
                      <span>
                         <i className="fab fa-twitter twitter-icon" />
                      </span>
-                  <button id='new-quote' className='buttons' onClick={this.getNewQuote}>New Quote</button>
+                  <button id='new-quote' className='buttons' onClick={this.getNewQuote}> &rarr; </button>
                </div>
             </div>
          </div>
